@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000000;
+    color: #00ffcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    max-width: 90%;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #ff00ff;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #00ffcc;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1em;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 11px;
+}
+
+nav a span {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #ff00ff;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+}
+
+@media (max-width: 599px) {
+    nav a svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav a span {
+        font-size: 0.7em;
+    }
+
+    nav {
+        gap: 10%;
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        padding: 30px 50px;
+    }
+
+    h1 {
+        font-size: 4em;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    nav a {
+        font-size: 1.2em;
+    }
+
+    nav a span {
+        font-size: 1em;
+    }
+}
