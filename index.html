@@ -4,13 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghosts NFT Collection</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #000000;
+            color: #00ffcc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            max-width: 90%;
+            margin-top: -10%;
+        }
+
+        h1 {
+            font-size: 11vw;
+            margin-bottom: 40px;
+            color: #ff00ff;
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #00ffcc;
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.7);
+        }
+
+        video {
+            width: 90%;
+            max-width: 600px;
+            margin-bottom: 30px;
+            border: 4px solid #00ffcc;
+            border-radius: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 10%;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #00ffcc;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1em;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        nav a svg {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        nav a span {
+            font-size: 0.8em;
+            text-align: center;
+        }
+
+        nav a:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.7);
+        }
+
+        @media (max-width: 599px) {
+            nav a svg {
+                width: 40px;
+                height: 40px;
+            }
+
+            nav a span {
+                font-size: 0.9em;
+            }
+
+            nav {
+                gap: 10%;
+            }
+
+            video {
+                border: 2px solid #00ffcc;
+            }
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                padding: 30px 50px;
+            }
+
+            h1 {
+                font-size: 70px;
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                font-size: 2em;
+                margin-bottom: 20px;
+            }
+
+            video {
+                border: 4px solid #00ffcc;
+            }
+
+            nav a {
+                font-size: 1.2em;
+            }
+
+            nav a span {
+                font-size: 1em;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>:Ghosts</h1>
-        <h2>NFT Collection</h2>
-        <video src="https://s.getgems.io/nft/c/63c40457e376c96adf1177ca/314/video.mp4" autoplay loop muted></video>
+        <video src="https://s.getgems.io/nft/c/63c40457e376c96adf1177ca/314/video.mp4" autoplay loop muted disablepictureinpicture disableremoteplayback playsinline></video>
         <nav>
             <a href="https://getgems.io/collection/EQDuVM_M2Cqx0bco0cYlNeW_aa2mvtvLy-UuPJQkzZEVmrmN" target="_blank">
                 <svg viewBox="0 0 28 28" fill="white" xmlns="http://www.w3.org/2000/svg">
